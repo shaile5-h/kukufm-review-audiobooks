@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kukufm-review-audiobooks/static/css/main.08b23a00.css",
+    "main.js": "/kukufm-review-audiobooks/static/js/main.ddae5cee.js",
+    "index.html": "/kukufm-review-audiobooks/index.html",
+    "main.08b23a00.css.map": "/kukufm-review-audiobooks/static/css/main.08b23a00.css.map",
+    "main.ddae5cee.js.map": "/kukufm-review-audiobooks/static/js/main.ddae5cee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08b23a00.css",
+    "static/js/main.ddae5cee.js"
+  ]
+}
