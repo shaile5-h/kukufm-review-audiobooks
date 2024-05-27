@@ -1,0 +1,870 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* App Header */
+.App-header {
+  position: sticky;
+  top: 0;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.App-header nav a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.App-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Audiobook List */
+.audiobook-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.audiobook-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.audiobook-item:hover {
+  transform: scale(1.05);
+}
+
+.audiobook-item h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: #292b2c;
+}
+
+.audiobook-item p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  color: #666;
+}
+
+.audiobook-item img {
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Audiobook Details */
+.audiobook-details {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.audiobook-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #292b2c;
+}
+
+.audiobook-details p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.audiobook-details img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.audiobook-details .genre,
+.audiobook-details .rating {
+  font-size: 1.1rem;
+  color: #ff9900;
+}
+
+.audiobook-details .reviews {
+  margin-top: 2rem;
+}
+
+.audiobook-details .reviews h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #292b2c;
+}
+
+.audiobook-details .reviews .review {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.audiobook-details .reviews .review p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Review Form */
+.review-form {
+  margin-top: 2rem;
+}
+
+.review-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #292b2c;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form form div {
+  margin-bottom: 1rem;
+}
+
+.review-form form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #292b2c;
+}
+
+.review-form form input,
+.review-form form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.review-form form button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form form button:hover {
+  background-color: #e68a00;
+}
+
+/* App.css */
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.audiobook-card {
+  width: 30%;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  transform: scale(1.5); /* Increase size by 1.5 times */
+}
+
+.audiobook-card:hover {
+  transform: scale(1.6); /* Slightly larger on hover */
+}
+
+.audiobook-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.audiobook-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.audiobook-card p {
+  font-size: 1.2em;
+} */
+
+/* App.css */
+
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  background-color: #282c34;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+
+.header-center .search-bar {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right nav {
+  margin-right: 20px;
+}
+
+.header-right nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header-right .login-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.audiobook-card {
+  width: 45%; /* 1.5 times the original 30% width */
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.audiobook-card:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.audiobook-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.audiobook-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.audiobook-card p {
+  font-size: 1.2em;
+}
+
+.audiobook-details {
+  padding: 20px;
+}
+
+.review-form {
+  padding: 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.filter-section {
+  flex: 1;
+  max-width: 240px; /* Adjust based on your design */
+  padding: 20px;
+  border-right: 1px solid #ccc; /* A subtle separator */
+}
+
+.audiobook-section {
+  flex: 3; /* Takes more space than the filter section */
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.header-left, .header-center, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  height: 30px;
+  width: 100%;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.audiobook-container {
+  display: flex;
+}
+
+.filter-box {
+  width: 200px; /* Set the width of the filter box */
+  margin-right: 20px; /* Add some margin between the filter box and the list */
+}
+
+.audiobook-list {
+  flex-grow: 1;
+}
+
+.audiobook-container {
+  display: flex;
+  justify-content: space-between; /* Adjust content spacing */
+}
+
+.filter-box {
+  background-color: #f8f8f8; /* Light grey background for the filter box */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  margin-right: 20px; /* Space between the filter box and the list */
+  width: 250px; /* Fixed width for the filter box */
+}
+
+.filter-box label {
+  display: block; /* Make each label block level to stack vertically */
+  margin-bottom: 10px; /* Space between each label */
+  font-weight: bold; /* Bold label text */
+  color: #333; /* Dark grey color for text for better readability */
+}
+
+.filter-box input {
+  width: 100%; /* Full width of the container */
+  padding: 8px; /* Padding for better text visibility */
+  margin-top: 4px; /* Space between label and input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners for the input boxes */
+  box-sizing: border-box; /* Border box sizing */
+}
+
+.filter-box input[type="number"]::-webkit-inner-spin-button,
+.filter-box input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Removes the default spin buttons */
+  margin: 0;
+}
+
+.audiobook-list {
+  flex-grow: 1; /* Allows the list to take the remaining space */
+}
+
+.filter-box div {
+    display: flex;
+    align-items: center;
+}
+
+.filter-box div.checkbox-group {
+  display: flex;
+  align-items: center; /* Vertically center aligns the checkbox with its label */
+  margin-bottom: 8px; /* Adds some space between each checkbox group */
+}
+
+.filter-box input[type="checkbox"] {
+  margin-right: 10px; /* Adds more space between the checkbox and the label text */
+}
+
+.audiobook-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: flex-start; /* Aligns children (filter box and list) at the top */
+}
+
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Constraining width to prevent spreading */
+  margin-right: 20px; /* Space between filter box and list */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filter-box h3 {
+  margin-bottom: 15px;
+}
+
+.filter-box label {
+  display: block; /* Ensures each label is full-width and block-level */
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Flex container for each label to manage layout of inputs and their labels */
+.filter-box label {
+  display: flex;
+  flex-direction: column; /* Stack label text and input vertically */
+}
+
+.filter-box .rating-group {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: flex-start; /* Aligns content to the left */
+}
+
+.filter-box input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and label text */
+}
+
+.audiobook-list {
+  flex-grow: 1; /* Takes remaining space */
+  width: calc(100% - 320px); /* Adjusts width taking filter box into account */
+}
+.filter-box {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  width: 100%; /* Ensure it fills the container width or set a max-width as needed */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+.filter-box h3 {
+  margin-bottom: 20px; /* Space between header and first input */
+}
+
+.filter-box label {
+  display: flex;
+  flex-direction: column; /* Stacks label text and input vertically */
+  margin-bottom: 10px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"] {
+  width: 100%; /* Full width of the container */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-box .rating-group {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Distributes space between items */
+  flex-wrap: wrap; /* Allows items to wrap if not enough horizontal space */
+}
+
+.filter-box .rating-group label {
+  flex: 1; /* Gives each label equal space */
+  display: flex;
+  align-items: center; /* Center alignment of text and radio button */
+  margin-right: 5px; /* Space between labels */
+}
+
+.filter-box .rating-group label:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+.filter-box input[type="radio"] {
+  margin-right: 5px; /* Space before the label text */
+}
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%; /* Adjust to fit within its container or set a max-width */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden; /* Ensures contents do not spill outside the box */
+}
+
+.filter-box h3 {
+  margin-bottom: 20px;
+}
+
+.filter-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.filter-box .rating-group {
+  display: flex;
+  align-items: center; /* Vertically aligns elements */
+  margin-bottom: 5px;
+}
+
+.filter-box .rating-group input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and label */
+}
+
+.filter-box .rating-group label {
+  margin-right: 10px; /* Space between each rating label */
+  white-space: nowrap; /* Prevents label text from wrapping */
+}
+
+.filter-box .rating-group label:last-child {
+  margin-right: 0; /* No right margin on the last label to fit content */
+}
+
+
+.audiobook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px; /* Adjust this as needed to fit the overall layout */
+  margin: auto;
+  padding: 20px;
+}
+
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Adjust width to prevent overflow */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filter-box h3 {
+  margin-bottom: 20px;
+}
+
+.filter-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start to use the minimal required space */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+.rating-group label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Space between radio button groups */
+}
+
+.rating-group input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and its label */
+}
+
+.audiobook-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between books */
+  padding-top: 20px;
+}
+
+.audiobook-item {
+  width: calc(25% - 20px); /* Four items per row with spacing */
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.audiobook-container {
+  display: flex;
+  flex-direction: row; /* Aligns children (filter box and list) horizontally */
+  align-items: flex-start; /* Aligns items at the top */
+  max-width: 100%; /* Ensures the container takes full width of its parent */
+  margin: 20px auto; /* Centers the container and gives some margin */
+  padding: 20px;
+}
+
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Fixed width for the filter box */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-right: 20px; /* Space between filter box and audiobook list */
+}
+
+.filter-box h3 {
+  margin-bottom: 20px;
+}
+
+.filter-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"], .filter-box input[type="radio"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px; /* Adds space below each input for clarity */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.audiobook-list {
+  flex-grow: 1; /* Allows the list to take up the remaining space */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap within the container */
+  gap: 20px; /* Space between each audiobook card */
+}
+
+.audiobook-item {
+  flex: 1 1 240px; /* Allows items to flexibly grow and sets a minimum width */
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.filter-box h3 {
+  margin-bottom: 15px;
+}
+
+.filter-box label, .filter-box div {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-box input[type="text"], .filter-box input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between; /* Evenly spaces the radio buttons */
+  align-items: center; /* Aligns the buttons vertically */
+}
+
+.rating-group label {
+  display: flex;
+  align-items: center;
+}
+
+.rating-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.audiobook-container {
+  display: flex;
+  flex-direction: row; /* Aligns children horizontally */
+  max-width: 100%; /* Full width to accommodate both child elements */
+  margin: 20px auto; /* Center the container on the page */
+}
+
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Fixed width for the filter box */
+  flex-shrink: 0; /* Prevents the filter box from shrinking */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-right: 20px; /* Space between filter box and audiobook list */
+}
+
+.audiobook-list {
+  flex-grow: 1; /* Takes up remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between each audiobook card */
+}
+
+.audiobook-item {
+  flex: 1 1 240px; /* Flexibility in item size, with a base size of 240px */
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style adjustments for interactive elements */
+.filter-box input[type="text"], .filter-box input[type="number"], .filter-box input[type="radio"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px; /* Adds space below each input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-box input[type="text"]:focus, .filter-box input[type="number"]:focus {
+  border-color: #0056b3; /* Highlight focus with a blue border */
+  box-shadow: 0 0 0 2px rgba(0,86,179,0.25); /* Soft glow effect */
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between; /* Even spacing for radio buttons */
+}
+
+.rating-group label {
+  cursor: pointer; /* Indicates the labels are clickable */
+}
+
+.rating-group input[type="radio"]:focus + span {
+  box-shadow: 0 0 0 2px rgba(0,86,179,0.25); /* Glow effect on focus */
+}
+.login-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #003d7a;
+}
